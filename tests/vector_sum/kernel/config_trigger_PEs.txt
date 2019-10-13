@@ -1,0 +1,4 @@
+SPM_pass_number	RF_pass_number	pe_exec	is_zero_init	is_write_back	is_spatial_reduce	change_RF_buf_Op1	change_RF_buf_Op2	change_RF_buf_Op3
+
+1	1	1	1	0	0	1	1	0
+1	2	0	0	1	0	0	0	1

@@ -1,0 +1,5 @@
+operand_number	start_addr_SPM_buffer0	start_addr_SPM_buffer1
+
+0	0	65536
+1	1024	66560
+2	67584	2048

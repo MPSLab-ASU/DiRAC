@@ -1,0 +1,20 @@
+# Execution breakdown in terms of RF passes and SPM passes.
+# In each RF pass, PEs process the data available in Register Files.
+# One SPM pass typically features multiple RF passes;
+# In each SPM pass, PE-array processes the data available in ScratchPad Memory.
+RF_passes_in_SPM_pass 4
+total_SPM_pass 4
+
+total_cycles_RF_pass 54
+total_compute_cycles_RF_pass 54
+
+# For a double-bufferred management of register file,
+# indices of starting register number for each data operand.
+regs_buf1_startIdx_Op1 0
+regs_buf1_startIdx_Op2 30
+regs_buf1_startIdx_Op3 90
+regs_buf2_startIdx_Op1 100
+regs_buf2_startIdx_Op2 130
+regs_buf2_startIdx_Op3 190
+
+

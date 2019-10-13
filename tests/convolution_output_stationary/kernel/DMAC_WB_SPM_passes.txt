@@ -1,0 +1,10 @@
+SPM_pass_number	operand_number	offset_base_addr_SPM	burst_width_bytes	offset_base_addr_DRAM
+
+2	2	0	72	0
+2	2	72	72	144
+3	2	0	72	72
+3	2	72	72	216
+4	2	0	72	288
+4	2	72	72	432
+5	2	0	72	360	
+5	2	72	72	504
