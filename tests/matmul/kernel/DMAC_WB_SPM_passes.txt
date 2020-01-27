@@ -1,3 +1,0 @@
-SPM_pass_number	operand_number	offset_base_addr_SPM	burst_width_bytes	offset_base_addr_DRAM
-
-2	2	0	50	0

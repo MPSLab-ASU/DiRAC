@@ -1,8 +1,0 @@
-RF_pass_number	network_number	operand_number	offset_base_network_packets	burst_width_elements	offset_base_addr_SPM
-
-0	0	0	0	5	0	
-0	1	1	0	25	0
-1	0	0	0	5	10	
-2	0	0	0	5	20	
-3	0	0	0	5	30	
-4	0	0	0	5	40	
