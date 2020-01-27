@@ -1,0 +1,3 @@
+kernel_name	total_operands,output_operands,length_tensor[i];i=1,2,3
+
+matmul	3,1,25,25,25

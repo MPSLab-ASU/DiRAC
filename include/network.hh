@@ -58,6 +58,7 @@ public:
   ~MultiCastController_OutputNetwork();
 
   void setupController(bool isRowWise);
+  void setupBus();
   void setInData(uint16_t idx, data_type *inData);
   void setWriteBack(uint16_t idx, bool *inWriteBack);
 

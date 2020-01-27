@@ -234,9 +234,10 @@ void MultiCastNetwork_Output::setupNetwork(bool **outWriteBack,
   // setup row-wise multicast controllers
   // connect them to the accelerator controller
   for(uint16_t i=0; i < nRows_PE_Array; i++) {
+    rowWiseMC[i].setupController(1);
+    rowWiseMC[i].setupBus();
     outWriteBack[i] = rowWiseMC[i].getPtrWriteBack();
     outData[i] = rowWiseMC[i].getPtrOutData();
-    rowWiseMC[i].setupController(1);
   }
 
   // set up column-wise multicast controllers
@@ -247,6 +248,7 @@ void MultiCastNetwork_Output::setupNetwork(bool **outWriteBack,
       rowWiseMC[i].setWriteBack(j, colWiseMC[i][j].getPtrWriteBack());
       rowWiseMC[i].setInData(j, colWiseMC[i][j].getPtrOutData());
       colWiseMC[i][j].setupController(0);
+      colWiseMC[i][j].setupBus();
 
       // connect each column-wise multicast controller to a PE
       colWiseMC[i][j].setWriteBack(0, PEArray[i][j].getPtrWriteBack(networkId));
@@ -287,9 +289,6 @@ void MultiCastController_OutputNetwork::execute(uint16_t rowId=0, uint16_t colId
 
 MultiCastController_OutputNetwork::MultiCastController_OutputNetwork()
 {
-  uint16_t num_inputBus = (isRowWise_controller) ? nCols_PE_Array : 1;
-  dataIn = new data_type*[num_inputBus];
-  writeBackIn = new bool*[num_inputBus];
 }
 
 
@@ -297,6 +296,13 @@ MultiCastController_OutputNetwork::~MultiCastController_OutputNetwork()
 {
   delete[] dataIn;
   delete[] writeBackIn;
+}
+
+void MultiCastController_OutputNetwork::setupBus()
+{
+  uint16_t num_inputBus = (isRowWise_controller) ? nCols_PE_Array : 1;
+  dataIn = new data_type*[num_inputBus];
+  writeBackIn = new bool*[num_inputBus];
 }
 
 
