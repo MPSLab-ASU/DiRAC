@@ -21,7 +21,7 @@ DiRAC is a cycle-level microarchitectural simulator for dataflow accelerators. P
 ## High-level Overview
 
 <p align="center">
-  <img src="http://aviral.lab.asu.edu/wp-content/uploads/2019/10/DiRAC_Overview.png"/ height="300">
+  <img src="https://labs.engineering.asu.edu/mps-lab/wp-content/uploads/sites/8/2019/10/DiRAC_Overview.png"/ height="250">
 </p>
 
 Above figure provides a high-level overview of the simulator. Programmer or the compiler can specify the input kernel and accelerator architecture description, i.e., pipelining of the PEs, configuration of the memories, and interconnect topology. For the target kernel (nested loops), programmer also specifies configurations that corresponds to details (machine instructions) like how to manage the PEs, and schedule data transfers for memories and interconnect, and so forth. These are the details for an execution method or the mapping of the loops onto target architecture. Then, the simulator can execute cycle-level functionalities of the microarchitectural blocks and then it outputs execution cycles, and the resultant data. If the expected output data is provided, then the simulator can compare it with the generated output and inform us whether the simulation has terminated with a successful functionality.
@@ -76,7 +76,7 @@ Execution methods can significantly impact the efficiency of the acceleration. E
 
 To learn about how to efficiently map loops onto programmable dataflow accelerators including optimizing different Deep Neural Network models, please refer to the following publication.
  
-Shail Dave, Youngbin Kim, Sasikanth Avancha, Kyoungwoo Lee, Aviral Shrivastava, [dMazeRunner: Executing Perfectly Nested Loops on Dataflow Accelerators](http://aviral.lab.asu.edu/bibadmin/uploads/pdf/dMazeRunner.pdf), in ACM Transactions on Embedded Computing Systems (TECS) \[Special Issue on ESWEEK 2019 - ACM/IEEE International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS)\]  (to appear)
+Shail Dave, Youngbin Kim, Sasikanth Avancha, Kyoungwoo Lee, Aviral Shrivastava, [dMazeRunner: Executing Perfectly Nested Loops on Dataflow Accelerators](https://dl.acm.org/doi/pdf/10.1145/3358198), in ACM Transactions on Embedded Computing Systems (TECS) \[Special Issue on ESWEEK 2019 - ACM/IEEE International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS)\]. \[[Repo](https://github.com/MPSLab-ASU/dMazeRunner)\]
 
 
 ### Contact Information
