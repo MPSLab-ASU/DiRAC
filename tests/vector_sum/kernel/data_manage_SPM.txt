@@ -1,5 +1,0 @@
-operand_number	start_addr_SPM_buffer0	start_addr_SPM_buffer1
-
-0	0	512
-1	128	640
-2	256	768

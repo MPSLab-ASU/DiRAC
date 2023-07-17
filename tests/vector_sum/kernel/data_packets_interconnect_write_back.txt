@@ -1,3 +1,0 @@
-network	packet_idx	offset_idx_data_layout
-
-0	0	0

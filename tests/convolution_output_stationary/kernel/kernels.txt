@@ -1,3 +1,0 @@
-kernel_name	total_operands,output_operands,length_tensor[i];i=1,2,3
-
-conv1	3,1,300,216,288
